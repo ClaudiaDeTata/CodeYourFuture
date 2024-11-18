@@ -1,0 +1,390 @@
+@font-face {
+  font-family: "Seattles Demo";
+  src: url("fonts/SeattlesDemoRegular.ttf") format("truetype");
+}
+
+body {
+  height: 100%;
+  margin: 50px;
+  background-image: url("images/beach-one.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  font-family: "Nunito", sans-serif;
+}
+
+/* navbar */
+.navbar {
+  background: linear-gradient(to top, #b59d7f, #88aaa8);
+  border-radius: 10px;
+  top: 10px;
+  left: 200px;
+  right: 200px;
+  z-index: 10;
+}
+
+div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+li a {
+  font-family: "Seattles Demo", Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  text-decoration: none;
+  color: #124349;
+  text-shadow: 3px 3px black;
+  display: inline;
+}
+
+.navbar-link {
+  display: block;
+  padding: 8px;
+}
+
+/* title */
+#title {
+  font-family: "Seattles Demo", Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* cards */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flip-card {
+  background-color: white;
+  border: 1px solid black;
+  width: 80%;
+  max-width: 300px;
+  min-width: 300px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 50px;
+  perspective: 1000px;
+}
+
+#img-card-one {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #88aaa8;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.card-title {
+  font-family: "Seattles Demo", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+  font-family: "Seattles Demo", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  cursor: help;
+  bottom: 10px;
+  position: absolute;
+  justify-content: center;
+}
+
+/* food page */
+
+.food-page {
+  background-image: linear-gradient(
+    to left,
+    #c2d5e0,
+    #b1b4b6,
+    #a19084,
+    #878384,
+    #3a85be
+  );
+}
+
+.nav-food {
+  background-image: linear-gradient(
+    to right,
+    #c2d5e0,
+    #b1b4b6,
+    #a19084,
+    #878384,
+    #3a85be
+  );
+}
+
+.div-title-food {
+  background-image: url("images/eating-on-the-beach.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#focaccia-container,
+#pesto-container,
+#farinata-container,
+#panissa-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.food-description {
+  border: 1px solid black;
+  max-width: 600px;
+  min-width: 550px;
+  height: 250px;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.food-pic {
+  width: 500px;
+  height: 290px;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* activities page*/
+
+.activities-page {
+  background-image: url("/images/sailing.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav-activities {
+  background-image: linear-gradient(
+    to left,
+    #8e96a8,
+    #5188ba,
+    #3499ed,
+    #4579ae,
+    rgba(85, 74, 85, 0.7)
+  );
+}
+
+.main-div-activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.activities-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.description-activities-div,
+.pic-activities-div {
+  width: 500px;
+  height: 500px;
+  border: 5px solid #333;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.description-activities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.pic-activities-div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#beach {
+  background-image: url("images/beach-two.jpg");
+}
+
+.activities-div-title {
+  font-weight: bold;
+}
+
+.paragraph-activities {
+  padding: 10px;
+}
+
+#aperitivo {
+  background-image: url("images/aperitivo.jpg");
+}
+
+#brandale {
+  background-image: url("images/brandale.jpg");
+}
+
+#bergeggi {
+  background-image: url("images/bergeggi.jpg");
+}
+
+/* contact page */
+
+.body-contact {
+  background-image: url("/images/boats-on-the-beach.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-title {
+  font-family: "Seattles Demo", Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+}
+
+.nav-contact {
+  background-image: linear-gradient(
+    to right,
+    #dcd7b0,
+    #b2b594,
+    #a0b6a9,
+    #365046,
+    #2e473e
+  );
+}
+
+.main-div-contact {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  background: #1b3697;
+  border-radius: 20px;
+  box-shadow: 0 15px 10px 0 #8b8685, 15px 0 10px 0 #636568;
+}
+
+.avatar {
+  width: 190px;
+  height: 295px;
+  display: flex;
+  align-items: center;
+}
+
+.card-contact {
+  width: auto;
+  margin: 0 auto;
+  padding: 50px;
+  display: block;
+  text-align: center;
+  align-items: space-between;
+  color: black;
+  background: #d7dadc;
+}
+
+.button-contact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: 3px solid #e6c5ba;
+  border-radius: 15px 30px;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  font-size: large;
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+.border-contact {
+  border: 3px solid #636568;
+  border-radius: 15px;
+}
+
+/* footer */
+
+#footer-div {
+  position: relative;
+  right: 10px;
+  bottom: -50px;
+  width: 100%;
+  text-align: right;
+}
+
+.footer-p {
+  font-family: "Seattles Demo", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
