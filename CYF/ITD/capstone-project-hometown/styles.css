@@ -13,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-around;
   font-family: "Nunito", sans-serif;
 }
 
@@ -84,7 +83,7 @@ li a {
   perspective: 1000px;
 }
 
-#img-card-one {
+.img-card-one {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -346,13 +345,12 @@ li a {
   padding: 50px;
   display: block;
   text-align: center;
-  align-items: space-between;
   color: black;
   background: #d7dadc;
 }
 
-.button-contact {
-  display: block;
+.contact-link {
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
@@ -388,3 +386,4 @@ li a {
   font-family: "Seattles Demo", Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
+
