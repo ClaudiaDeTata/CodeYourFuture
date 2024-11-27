@@ -35,8 +35,7 @@ You can view a live demo of the project [here](https://hometown-homepage-savona-
 - **Consistent Typography & Colors**: Custom fonts, gradients and text shadows for a unified design.
 - **Footer**: Right-aligned footer with custom font styling.
 
-* Update *
-- JS file has been added to the project, to implement 2 dynamic features:
+* Update: JS file has been added to the project, to implement 2 dynamic features:
 1) An image carousel;
 2) A click counter, used to develop a way for users to show they enjoyed my website.
 
