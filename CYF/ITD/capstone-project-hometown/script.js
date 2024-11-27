@@ -1,7 +1,6 @@
+window.addEventListener('DOMContentLoaded', (event) => {
 // image carousel
-var pictures;
-
-pictures = [
+var pictures = [
     '/images/ultima-spiaggia-alb.jpg',
     '/images/celle-lig.jpg',
     '/images/varazze.jpg',
@@ -16,7 +15,6 @@ pictures = [
 let element_carousel = document.getElementById('carousel-pics');
 element_carousel.setAttribute("src", pictures[0]);
 
-
 document.getElementById('button-next').addEventListener('click', (event) => {
   let element_carousel2 = document.getElementById('carousel-pics');
   pictures.push(pictures.shift());
@@ -30,15 +28,5 @@ document.getElementById('button-prev').addEventListener('click', (event) => {
   pictures.unshift(pictures.pop());
 
 });
-
-
-// click counter
-var click_count;
-
-click_count = 0;
-
-document.getElementById('appreciation-button').addEventListener('click', (event) => {
-  click_count = (typeof click_count === 'number' ? click_count : 0) + 1;
-  event.target.innerText = `${click_count} of you showed their love 😍`;
-
 });
+
