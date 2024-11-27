@@ -292,6 +292,48 @@ li a {
   background-image: url("images/bergeggi.jpg");
 }
 
+/* img-carousel */
+
+#carousel-title{
+  font-family: "Seattles Demo", Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.img-carousel-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;  
+}
+
+#carousel-pics{
+  background-color: rgba(161, 208, 247, 1);
+  border: 5px solid #333;
+  border-radius: 10%;
+  width: 500px; 
+  height: 500px; 
+  object-fit: contain; 
+}
+
+.carousel-btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-button {
+  margin: 30px;
+  padding: 10px;
+  border: 5px solid #333;
+  border-radius: 30px 15px;
+  background-color: rgba(161, 208, 247, 1);
+  width: 125px;
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+}
+
 /* contact page */
 
 .body-contact {
