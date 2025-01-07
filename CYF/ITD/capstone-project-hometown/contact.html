@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,3 +70,76 @@
   </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometown: Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        var click_count = 0;
+
+        document
+          .getElementById('appreciation-button')
+          .addEventListener('click', (event) => {
+            click_count = (
+              typeof click_count === 'number'
+              ? click_count
+              : 0) + 1;
+            event.target.innerText = `${click_count} of you showed their love 😍`;
+          });
+      });
+    </script>
+
+  </head>
+
+  <body class="body-contact">
+    <!-- navbar -->
+    <div class="navbar nav-contact">
+      <ul>
+        <li>
+          <a href="index.html" class="navbar-link">Places</a>
+        </li>
+        <li>
+          <a href="food.html" class="navbar-link">Food</a>
+        </li>
+        <li>
+          <a href="activities.html" class="navbar-link">Activities</a>
+        </li>
+        <li>
+          <a href="contact.html" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- title -->
+    <div class="contact-title">Hey, did you like my page?</div>
+    <!-- click-counter -->
+    <div>
+      <button id="appreciation-button">If you did, click here!</button>
+    </div>
+    <!-- business card -->
+    <div class="main-div-contact">
+      <div class="card-contact border-contact">
+        <a href="https://www.linkedin.com/in/claudia-detata" target="_blank" class="contact-link">Contact me!</a>
+        <h3 class="contact-text">My name is Claudia De Tata</h3>
+        <p class="contact-text">I am a Full Stack Developer</p>
+        <h4 class="contact-text">I live in Edinburgh, Scotland</h4>
+      </div>
+      <div>
+        <img src="images/cla.jpg" alt="Claudia De Tata smiling at the camera in a professional picture" class="avatar border-contact">
+      </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+
+</html>
+>>>>>>> b6acb4a825fd1ab337fe59cd80515d6d2b37a81c
